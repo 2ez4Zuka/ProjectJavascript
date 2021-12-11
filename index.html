@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <body class="body">
+        <nav class="nav">
+            <h1 class="nav__title">DESAFÍO OBJETOS Y ARRAYS</h1>
+            <h2 class="nav__subtitle">INCORPORAR OBJETOS Y ARRAYS</h2>
+            <p class="nav__subtitle">Tienda Virtual</p>
+            <p class="nav__subtitle">Haz click para agregar al carrito</p>
+            <div id="info">
+                <p id="title">0 Items en el carrito</p>
+                <p id="total">Costo total</p>
+            </div>
+
+            <hr>
+            <div class="producto-container no_selection">
+                <div class="producto" id="rojo">
+                    <img class="producto__img" src="https://picsum.photos/id/10/600" alt="" width="300">
+                    <p class="producto__title">Montaña Bonita</p>
+                    <p class="producto__subtitle">Uso: Para que cries animales</p>
+                    <p class="producto__subtitle precio">500</p>
+                    <div class="btn-container">
+                        <span class="btn_add">+</span>
+                        <span class="btn_rm">-</span>
+                    </div>
+                </div>
+                <div class="producto" id="dorado">
+                    <img class="producto__img" src="https://picsum.photos/id/20/600" alt="" width="300">
+                    <p class="producto__title">Accesorios de escritorio</p>
+                    <p class="producto__subtitle">Uso: Con este setup, programar sera mas facil</p>
+                    <p class="producto__subtitle precio">1000</p>
+                    <div class="btn-container">
+                        <span class="btn_add">+</span>
+                        <span class="btn_rm">-</span>
+                    </div>
+                </div>
+                <div class="producto" id="verde">
+                    <img class="producto__img" src="https://picsum.photos/id/30/600" alt="" width="300">
+                    <p class="producto__title">Taza para un buen mate</p>
+                    <p class="producto__subtitle">Uso: Te da una vida extra</p>
+                    <p class="producto__subtitle precio">700</p>
+                    <div class="btn-container">
+                        <span class="btn_add">+</span>
+                        <span class="btn_rm">-</span>
+                    </div>
+                </div>
+            </div>
+            <p class="titulo_carrito">Estos son los productos seleccionados en tu carrito :</p>
+            <div class="carrito-container" id="carrito">
+            </div>
+            <a class="nav__link" href="../index.html">Volver</a>
+        </nav>
+        <script src="js/script.js"></script>
+
+    
+</body>
+</html>
