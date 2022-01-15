@@ -44,6 +44,7 @@ const pintarCards = data => {
     cards.appendChild(fragment)
 }
 
+
 // Agregar al carrito
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
@@ -99,10 +100,21 @@ const pintarFooter = () => {
     footer.innerHTML = ''
     
     if (Object.keys(carrito).length === 0) {
+        
+        /*
         footer.innerHTML = `
         <th scope="row" colspan="5">Carrito vacío con innerHTML</th>
         `
+        */
+
+        $(document).ready(function () {
+            $('#footer').html('Carrito vacío: Usando HTML Jquery');
+        });
+
+        
         return
+
+
     }
     
     // sumar cantidad y sumar totales
@@ -120,9 +132,22 @@ const pintarFooter = () => {
     
     // Evento para vaciar el carrito:
     const boton = document.querySelector('#vaciar-carrito')
+    
     boton.addEventListener('click', () => {
         carrito = {}
         pintarCarrito()
+
+        $(document).ready(function () {
+
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Se limpió el carrito',
+            showConfirmButton: false,
+            timer: 1500
+          });
+        });
+
     })
 
 }
