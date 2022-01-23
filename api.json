@@ -1,0 +1,44 @@
+[
+    {
+      "precio": 2500,
+      "id": 1,
+      "title": "Laptop",
+      "thumbnailUrl": "https://picsum.photos/id/0/600",
+      "tipo": "Electronico"
+    },
+    {
+      "precio": 50000,
+      "id": 2,
+      "title": "Montaña",
+      "thumbnailUrl": "https://picsum.photos/id/10/600",
+      "tipo": "Electronico"
+    },
+    {
+      "precio": 1000,
+      "id": 3,
+      "title": "Escritorio",
+      "thumbnailUrl": "https://picsum.photos/id/20/600",
+      "tipo": "Electronico"
+    },
+    {
+      "precio": 10,
+      "id": 4,
+      "title": "Taza",
+      "thumbnailUrl": "https://picsum.photos/id/30/600",
+      "tipo": "Cocina"
+    },
+    {
+      "precio": 500,
+      "id": 5,
+      "title": "Gato",
+      "thumbnailUrl": "https://picsum.photos/id/40/600",
+      "tipo": "Animales"
+    },
+    {
+      "precio": 900,
+      "id": 6,
+      "title": "Perrito",
+      "thumbnailUrl": "https://picsum.photos/id/237/200",
+      "tipo": "Animales"
+    }
+  ]
