@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --green: rgb(9, 114, 53);
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: var(--green);
+  color: #fff;
+}
+
+.header__logo {
+  background: #09554b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.logo {
+  color: black;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.logo i {
+  padding-right: 0.5rem;
+  color: var(--green);
+}
+
+.header__buscador {
+  display: flex;
+  height: 5rem;
+}
+
+.header__buscador #buscador {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #333;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+}
+.header__buscador label {
+  height: 100%;
+  width: 8rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: black;
+  background: var(--green);
+  text-align: center;
+  cursor: pointer;
+}
+.header__buscador label:hover {
+  background: black;
+  color: var(--green);
+}
+.header__nav {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  color: black;
+}
+.navbar a:hover {
+  background: var(--green);
+  color: #fff;
+}
+.carrito a {
+  margin: 1rem;
+  font-size: 3rem;
+  color: black;
+  padding-left: 1rem;
+}
+.carrito a:hover {
+  color: var(--green);
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.home .content {
+  position: absolute;
+}
+.home .content span {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.home .content a {
+  font-size: 5rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.home .content h3 {
+  display: flex;
+  justify-content: center;
+}
+.home .content a:hover {
+  background: black;
+}
+
+.productos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 9%;
+}
+.productos-ind {
+  flex: 1 1 30rem;
+  text-align: center;
+  padding: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.productos-ind img {
+  height: 20rem;
+}
+.productos-ind h3 {
+  color: black;
+  font-size: 2.5rem;
+}
+.estrellas {
+  padding: 1rem 0.1rem;
+  font-size: 1.7rem;
+  color: var(--green);
+}
+.precios {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+  padding: 0.5rem;
+}
+.cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.cantidad span {
+  padding: 0 0.7rem;
+  font-size: 1.7rem;
+}
+.cantidad input {
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: black;
+  padding: 0.5rem;
+  width: 5rem;
+  background: rgba(0, 0, 0, 0.05);
+}
+.productos-ind button {
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+.productos-ind button:hover {
+  background-color: black;
+}
+.titulo {
+  text-align: center;
+  font-size: 5rem;
+  padding: 5rem;
+}
+.titulo span {
+  color: var(--green);
+}
+
+.carrito {
+  position: relative;
+}
+.carrito .table {
+  display: none;
+}
+.carrito-contador {
+  color: red;
+}
+
+.header__nav:hover .table {
+  display: block;
+  position: absolute;
+  color: black;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.vaciar-carrito {
+  text-align: center;
+  margin-top: 1rem;
+  background: var(--green);
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.botones {
+  display: flex;
+  justify-content: space-around;
+}
+.img-carrito {
+  height: 10rem;
+}
+.cantidad-tabla {
+  text-align: center;
+}
+.btn-tabla {
+  text-align: center;
+}
+.btn-carrito-agregar {
+  background: var(--green);
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.btn-carrito-eliminar {
+  background: red;
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+#vaciar-carrito,
+#comprar-carrito {
+  margin: 2rem;
+  background: var(--green);
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+#vaciar-carrito {
+  margin: 2rem;
+  background: red;
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+
+/* ESTILOS PRODUCTOS */
+
+.btn-group {
+    display: block;
+}
+
+.titulo__h1--padding {
+    padding-top: 4rem;
+}
+
+.filtros {
+    margin: 0 1.6rem;
+    font-family: 'poppins';
+}
+
+.filtros__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #225239;
+    margin: 2rem 0 5rem 0;
+    padding: .65rem;
+}
+
+.filtros__container .filtros__dropdown #btnGroupDrop1 {
+    color: #e7e7e7;
+}
+
+.filtros__container .filtros__dropdown .dropdown-menu {
+    background-color: #225239;
+}
+
+.filtros__container .filtros__dropdown .dropdown-item {
+    font-size: 1.25rem;
+    color: #e7e7e7;
+}
+
+.filtros__container .filtros__dropdown .dropdown-item:hover {
+    background-color: #949A88;
+    opacity: .75;
+}
+
+.filtros__container .filtros__secciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.filtros__container .filtros__secciones .filtros__botones {
+    color: #e7e7e7;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.filtros__container .filtros__total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filtros__container .total--color {
+    margin: 0 .5rem 0 0;
+    color: #e7e7e7;
+}
+
+.filtros__container .btn-secondary {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.filtros__container .btn-secondary:hover {
+    background-color: #949A88;
+    border: none;
+}
